@@ -1,0 +1,10 @@
+lint:
+  rules:
+    all_default: true
+    remove:
+      - MAX_LINE_LENGTH
+      - INDENT
+      - FILE_HAS_COMMENT
+      - FIELD_NAMES_EXCLUDE_PREPOSITIONS
+      - MESSAGE_NAMES_EXCLUDE_PREPOSITIONS
+      - IMPORTS_SORTED
