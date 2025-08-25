@@ -5,8 +5,8 @@ namespace Roslynator.Analyzer.Helpers
     public static class LocalFileHelper
     {
         public static string MainEditorconfigPath { get; }
-        public static string ProtolintPath { get; }
         public static string DirectoryPackagesPath { get; }
+        public static string ProtolintPath { get; }        
 
         static LocalFileHelper()
         {
