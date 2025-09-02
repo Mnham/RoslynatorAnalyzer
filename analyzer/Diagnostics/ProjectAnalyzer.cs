@@ -40,7 +40,7 @@ namespace Roslynator.Analyzer.Diagnostics
         {
             Rule<ProjectRootElement>[] rules =
             [
-                new RequiredPropertyRule(MessageLevel.Error, "LangVersion", "latest"),
+                new RequiredPropertyRule(MessageLevel.Warning, "LangVersion", "latest"),
                 new UnnecessaryPropertyRule(MessageLevel.Error, "NoWarn"),
                 new UnnecessaryPropertyRule(MessageLevel.Error, "CodeAnalysis"),
             ];
