@@ -1,8 +1,8 @@
-﻿using Roslynator.Analyzer.Enums;
-using Roslynator.Analyzer.Models;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
+using Roslynator.Analyzer.Enums;
+using Roslynator.Analyzer.Models;
 
 namespace Roslynator.Analyzer.Rules
 {
