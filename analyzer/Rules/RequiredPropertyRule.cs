@@ -1,5 +1,5 @@
-﻿using Roslynator.Analyzer.Enums;
-using Microsoft.Build.Construction;
+﻿using Microsoft.Build.Construction;
+using Roslynator.Analyzer.Enums;
 
 namespace Roslynator.Analyzer.Rules
 {
