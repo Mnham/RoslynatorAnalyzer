@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0
+FROM mcr.microsoft.com/dotnet/sdk:10.0
 
 WORKDIR /src
 
@@ -19,9 +19,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Установка protolint
-RUN wget https://github.com/yoheimuta/protolint/releases/download/v0.55.6/protolint_0.55.6_linux_amd64.tar.gz && \
-    tar -xzf protolint_0.55.6_linux_amd64.tar.gz -C /usr/local/bin && \
-    rm protolint_0.55.6_linux_amd64.tar.gz && \
+RUN wget https://github.com/yoheimuta/protolint/releases/download/v0.56.4/protolint_0.56.4_linux_amd64.tar.gz && \
+    tar -xzf protolint_0.56.4_linux_amd64.tar.gz -C /usr/local/bin && \
+    rm protolint_0.56.4_linux_amd64.tar.gz && \
     chmod +x /usr/local/bin/protolint
 
 # Установка Roslynator
