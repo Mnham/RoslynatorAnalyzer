@@ -1,4 +1,4 @@
-[![Build and Push Docker Image](https://github.com/Mnham/RoslynatorAnalyzer/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Mnham/RoslynatorAnalyzer/actions/workflows/docker-publish.yml)
+[![Build and Push Docker Image](https://github.com/Mnham/RoslynatorAnalyzer/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/Mnham/RoslynatorAnalyzer/actions/workflows/docker-publish.yml)
 
 #### Локальный запуск
 ```
