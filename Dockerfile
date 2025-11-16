@@ -14,7 +14,8 @@ COPY ./analyzer/ .
 
 # Установка системных пакетов
 RUN apt-get update && \
-    apt-get install -y nuget wget unzip && \
+    apt-get install -y mono-complete wget unzip && \
+    wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -28,9 +29,9 @@ RUN wget https://github.com/yoheimuta/protolint/releases/download/v0.56.4/protol
 RUN dotnet tool install -g roslynator.dotnet.cli
 
 # Установка NuGet-анализаторов
-RUN nuget install Roslynator.Analyzers -OutputDirectory /root/analyzers && \
-    nuget install Roslynator.Formatting.Analyzers -OutputDirectory /root/analyzers && \
-    nuget install Roslynator.CodeAnalysis.Analyzers -OutputDirectory /root/analyzers
+RUN mono nuget.exe install Roslynator.Analyzers -OutputDirectory /root/analyzers && \
+    mono nuget.exe install Roslynator.Formatting.Analyzers -OutputDirectory /root/analyzers && \
+    mono nuget.exe install Roslynator.CodeAnalysis.Analyzers -OutputDirectory /root/analyzers
 
 # Сборка основного проекта
 RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
